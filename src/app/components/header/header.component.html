@@ -1,0 +1,54 @@
+<!-- <div class="header">
+  <nav class="navbar">
+    <h2 class="logo">TRIPFY</h2>
+    <button class="hamburger hamburger--spring" type="button" [ngClass]="{'is-active':isOpen}" (click)="toggleMenu()">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+    </button>
+    <div class="nav-links" [ngClass]="{'menu-open':isOpen}">
+      <ul>
+        <li>Crear cuenta</li>
+        <li>Contacto</li>
+        <li>FAQ</li>
+        <button class="btn reservar">Log in</button>
+      </ul>
+    </div>
+  </nav>
+</div> -->
+<div class="header">
+  <nav class="navbar">
+    <div class="logo">
+      <img src="../../../assets/images/logoTripfy.png" width="32" alt="">
+      <h2 class="title">TRIPFY</h2>
+    </div>
+    <button
+      class="hamburger hamburger--spring"
+      type="button"
+      [ngClass]="{ 'is-active': isOpen }"
+      (click)="toggleMenu()"
+    >
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    <div class="nav-links">
+      <ul>
+        <li>Sobre nosotros</li>
+        <li>Contacto</li>
+        <li id="faq">FAQ</li>
+        <li>Iniciar sesión</li>
+        <button class="btn reservar">Registrarse</button>
+      </ul>
+    </div>
+    <div class="menu-open" [@openMenu]="isOpen ? 'open' : 'closed'">
+      <ul>
+        <li>Sobre nosotros</li>
+        <li>Contacto</li>
+        <li>FAQ</li>
+        <li>Iniciar sesión</li>
+        <button class="btn reservar">Registrarse</button>
+      </ul>
+    </div>
+  </nav>
+</div>
