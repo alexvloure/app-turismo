@@ -12,7 +12,7 @@ import { NONE_TYPE } from '@angular/compiler';
         'open',
         style({
           opacity: 1,
-          backgroundColor: 'rgb(43,43,43)',
+          backgroundColor: '#faf7f0',
         })
       ),
       state(

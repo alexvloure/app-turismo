@@ -1,0 +1,143 @@
+.ofertas-container {
+  background-color: #faf7f0;
+}
+.ofertas {
+  height: 70vh;
+  margin: 0 auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h2 {
+  padding-bottom: 2vh;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 2vh 2vw;
+  color: rgb(43,43,43);
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+.card {
+  position: relative;
+  border-radius: 5px;
+  height: 50vh;
+  width: 100%;
+  margin: 0 1vw;
+  background-color: rgba(255, 255, 255, 0.719);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transition: all 0.5s ease;
+}
+.card:hover {
+  background-color: #ff0049;
+  transform: scale(1.015);
+  transition: all 0.5s ease;
+  color: #faf7f0;
+}
+.descuento {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  top: 0;
+  right: 0;
+  border-left: 5rem solid transparent;
+  border-top: 5rem solid rgb(43,43,43);
+  color: #faf7f0;
+  // FEFDFB
+}
+.descuento span {
+  position: absolute;
+  width: 40px;
+  height: 20px;
+  top: -4rem;
+  right: 0.3rem;
+  font-weight: 700;
+}
+.card:hover .descuento {
+  border-top: 5rem solid rgb(43,43,43);
+}
+.title {
+  font-weight: 700;
+  margin: 0;
+  padding-top: 0.5rem;
+}
+.descripcion {
+  margin-top: 0.5rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  padding-bottom: 1rem;
+}
+.verMas {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1vh;
+  width: 90%;
+  height: 6vh;
+  border-radius: 5px;
+  background-color: #ff0049;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #faf7f0;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.verMas:hover {
+  transform: scale(1.02);
+  transition: all 0.5s ease;
+}
+.price {
+  width: 50%;
+  text-align: center;
+  border-right: 1px solid #faf7f0;
+}
+.priceBefore {
+  padding-right: 0.5rem;
+  // font-size: 0.8rem;
+  text-decoration: line-through;
+}
+.priceOffer {
+  font-weight: 700;
+}
+.button {
+  width: 50%;
+  text-align: center;
+}
+.card:hover .verMas {
+  color: rgb(43,43,43);
+  background-color: #faf7f0;
+}
+.card:hover .price {
+  border-right: 1px solid #ff0049;
+}
+
+@media (max-width: 768px) {
+  .ofertas {
+    height: auto;
+    flex-direction: column;
+  }
+  h2 {
+    padding-bottom: 0vh;
+    padding-top: 4vh;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .card {
+    width: 90vw;
+    height: 60vh;
+    margin: 2vh 2vw;
+  }
+}

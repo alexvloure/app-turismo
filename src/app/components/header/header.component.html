@@ -19,8 +19,8 @@
 <div class="header">
   <nav class="navbar">
     <div class="logo">
-      <img src="../../../assets/images/logoTripfy.png" width="32" alt="">
-      <h2 class="title">TRIPFY</h2>
+      <img src="../../../assets/images/logoTripfy2.png" width="32" alt="">
+      <h2 class="title">Tripfy<span style="color:#ff0049;">.</span></h2>
     </div>
     <button
       class="hamburger hamburger--spring"
@@ -38,7 +38,7 @@
         <li>Contacto</li>
         <li id="faq">FAQ</li>
         <li>Iniciar sesión</li>
-        <button class="btn reservar">Registrarse</button>
+        <li id="registrarse"><p id="r-text">Registrarse</p></li>
       </ul>
     </div>
     <div class="menu-open" [@openMenu]="isOpen ? 'open' : 'closed'">
@@ -47,7 +47,7 @@
         <li>Contacto</li>
         <li>FAQ</li>
         <li>Iniciar sesión</li>
-        <button class="btn reservar">Registrarse</button>
+        <app-button-mod textoBoton="Registrarse" claseBoton="btn-2"></app-button-mod>
       </ul>
     </div>
   </nav>

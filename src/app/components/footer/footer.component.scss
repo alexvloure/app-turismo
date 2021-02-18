@@ -1,0 +1,54 @@
+.footer-container {
+  height: auto;
+  border-top: 1px solid rgba($color: #000000, $alpha: 0.1);
+  background-color: #faf7f0;
+}
+.footer {
+  padding-top: 1.5rem;
+  margin: auto auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+h3 {
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul li{
+  margin-bottom: 0.8rem;
+}
+.social li{
+  display: inline;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+.social li:last-child{
+  margin: 0;
+}
+.logo-bottom {
+  font-family: Righteous, Arial;
+  margin-top: 1rem;
+  text-align: center;
+}
+.logo-bottom span {
+  color: #ff0049;
+}
+
+//MOBILE DEVICES
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+  .general,  .condiciones, .contacto, .redes-sociales {
+    width: 48%;
+    text-align: center;
+    margin: 1%;
+  }
+}

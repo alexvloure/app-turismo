@@ -1,0 +1,39 @@
+<div class="recomendados-container">
+  <div class="recomendados">
+    <h2 class="title">Alojamientos recomendados</h2>
+    <div class="card" (mouseout)="active = 0">
+      <div class="info">
+        <div class="info-detail" id="id1" (mouseover)="active = 11">
+          <div class="details" id="d1" [ngClass]="{'selectedD':active === 11}">
+            <h2 class="name">{{ alojamientos[11]?.nombre }}</h2>
+            <p>{{ alojamientos[11]?.localizacion }}</p>
+          </div>
+          <div class="reservar" [ngClass]="{'selectedR':active === 11}">Ver más</div>
+        </div>
+        <div class="info-detail" (mouseover)="active = 7">
+          <div class="details" [ngClass]="{'selectedD':active === 7}">
+            <h2 class="name">{{ alojamientos[7]?.nombre }}</h2>
+            <p>{{ alojamientos[7]?.localizacion }}</p>
+          </div>
+          <div class="reservar" [ngClass]="{'selectedR':active === 7}">Ver más</div>
+        </div>
+        <div class="info-detail" (mouseover)="active = 9">
+          <div class="details" [ngClass]="{'selectedD':active === 9}">
+            <h2 class="name">{{ alojamientos[9]?.nombre }}</h2>
+            <p>{{ alojamientos[9]?.localizacion }}</p>
+          </div>
+          <div class="reservar" [ngClass]="{'selectedR':active === 9}">Ver más</div>
+        </div>
+        <div class="info-detail" id="id4" (mouseover)="active = 10">
+          <div class="details" id="d4" [ngClass]="{'selectedD':active === 10}">
+            <h2 class="name">{{ alojamientos[10]?.nombre }}</h2>
+            <p>{{ alojamientos[10]?.localizacion }}</p>
+          </div>
+          <div class="reservar" [ngClass]="{'selectedR':active === 10}">Ver más</div>
+        </div>
+      </div>
+      <div class="foto" [ngClass]="{'active1':active === 11, 'active2':active === 7, 'active3':active === 9, 'active4':active === 10, 'active0':active === 0}">
+      </div>
+    </div>
+  </div>
+</div>

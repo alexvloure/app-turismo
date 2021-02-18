@@ -1,4 +1,103 @@
-// .buscador {
-//   max-width: 1200px;
-//   margin: 0 auto;
-// }
+.searchSection {
+  position: absolute;
+  width: 100%;
+  top: 19vh;
+  background-color:rgb(212, 255, 236);
+  background-color: transparent;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+.blur {
+  height: auto;
+  border-radius: 5px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+.content {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border-radius: 5px;
+  padding: 2rem 2rem;
+  max-width: 1200px;
+  backdrop-filter: blur(5px);
+  color: rgb(43, 43, 43);
+  margin: 0 auto;
+}
+.titleSearch {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+//FORMULARIO
+fieldset {
+  padding: 0 1rem;
+}
+.form-field {
+  margin-right: 3vw;
+}
+
+//SMALL SCREENS
+@media (max-width: 974px){
+  fieldset {
+    text-align: center;
+  }
+}
+
+//MOBILE DEVICES
+@media (max-width: 768px) {
+  .titleSearch {
+    font-weight: 700;
+    font-size: 1.2rem;
+  }
+  .searchSection {
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    top: 0;
+  }
+  form {
+    width: 100%;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonSpan {
+    padding-top: 0.5rem;
+  }
+}
+
+//LANDSCAPE MODE FOR MOBILE DEVICES
+@media (max-width: 1000px) and (orientation: landscape) {
+  .searchSection {
+    font-weight: 700;
+    font-size: 0.8rem;
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+    top: 8vh;
+    height: 88vh;
+    padding: 0;
+  }
+  .blur {
+    height: 88vh;
+    border-radius: 0;
+  }
+  .content{
+    height: 88vh;
+    border-radius: 0;
+  }
+  form {
+    width: 100%;
+  }
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonSpan {
+    padding-top: 0.5rem;
+  }
+}

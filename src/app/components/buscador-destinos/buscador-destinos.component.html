@@ -1,5 +1,33 @@
-<div class="col-2">a</div>
-<div class="col-8">
-  hola funciono!
+<div class="searchSection">
+  <div class="blur">
+    <div class="content">
+      <h2 class="titleSearch">
+        Busca hoteles, apartamentos, casas rurales y más en Mallorca y Galicia
+      </h2>
+      <form action="">
+        <fieldset>
+          <mat-form-field class="form-field">
+            <mat-label>Destino</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <mat-form-field class="form-field">
+            <mat-label>Número de personas</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <mat-form-field class="form-field">
+              <mat-label>Fecha</mat-label>
+              <mat-date-range-input [rangePicker]="picker">
+                <input matStartDate placeholder="Check in" />
+                <input matEndDate placeholder="Check out" />
+              </mat-date-range-input>
+              <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-date-range-picker #picker ></mat-date-range-picker>
+          </mat-form-field>
+          <span class="buttonSpan">
+            <app-button-mod textoBoton="Buscar" claseBoton="btn-1" tamañoBoton="lg" ></app-button-mod>
+          </span>
+        </fieldset>
+      </form>
+    </div>
+  </div>
 </div>
-<div class="col-2">b</div>

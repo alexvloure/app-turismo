@@ -1,0 +1,61 @@
+<div class="ofertas-container">
+  <div class="ofertas">
+    <h2>Ofertas destacadas</h2>
+    <div class="cards">
+        <div class="card">
+          <div class="descuento">
+            <span>-25%</span>
+          </div>
+          <div style="background-image:url({{alojamientos[1]?.galeria_fotos[6]}});width:100%;min-height:182px;background-size: cover;border-top-left-radius: 5px;border-top-right-radius:5px"></div>
+          <h3 class="title">{{alojamientos[1]?.nombre}}</h3>
+          <div class="ubicacion">{{alojamientos[1]?.localizacion}}</div>
+          <div style="overflow: hidden;">
+            <p class="descripcion">{{alojamientos[1]?.descripcion_corta}}</p>
+          </div>
+          <div class="verMas">
+            <div class="price">
+              <span class="priceBefore">{{alojamientos[1]?.precio_noche/0.75 | number : '1.0-2'}}€</span>
+              <span class="priceOffer">{{alojamientos[1]?.precio_noche}}€</span>
+            </div>
+            <span class="button">RESERVAR</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="descuento">
+            <span>-30%</span>
+          </div>
+          <div style="background-image:url({{alojamientos[3]?.galeria_fotos[5]}});width:100%;min-height:182px;background-size: cover;border-top-left-radius: 5px;border-top-right-radius:5px"></div>
+          <h3 class="title">{{alojamientos[3]?.nombre}}</h3>
+          <div class="ubicacion">{{alojamientos[3]?.localizacion}}</div>
+          <div style="overflow: hidden;">
+            <p class="descripcion">{{alojamientos[3]?.descripcion_corta}}</p>
+          </div>
+          <div class="verMas">
+            <div class="price">
+              <span class="priceBefore">{{alojamientos[3]?.precio_noche/0.70 | number : '1.0-2'}}€</span>
+              <span class="priceOffer">{{alojamientos[3]?.precio_noche}}€</span>
+            </div>
+            <span class="button">RESERVAR</span>
+          </div>
+        </div>
+        <div class="card">
+          <div class="descuento">
+            <span>-20%</span>
+          </div>
+          <div style="background-image:url({{alojamientos[0]?.galeria_fotos[0]}});width:100%;min-height:182px;background-size: cover;border-top-left-radius: 5px;border-top-right-radius:5px"></div>
+          <h3 class="title">{{alojamientos[0]?.nombre}}</h3>
+          <div class="ubicacion">{{alojamientos[0]?.localizacion}}</div>
+          <div style="overflow: hidden;">
+            <p class="descripcion">{{alojamientos[0]?.descripcion_corta}}</p>
+          </div>
+          <div class="verMas">
+            <div class="price">
+              <span class="priceBefore">{{alojamientos[0]?.precio_noche/0.80 | number : '1.0-2'}}€</span>
+              <span class="priceOffer">{{alojamientos[0]?.precio_noche}}€</span>
+            </div>
+            <span class="button">RESERVAR</span>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>

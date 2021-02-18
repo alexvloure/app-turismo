@@ -1,0 +1,162 @@
+.recomendados-container {
+  padding-top: 2vh;
+  padding-bottom: 3vh;
+  background-color: #faf7f0;
+}
+.recomendados {
+  max-width: 1200px;
+  height: 70vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.title {
+  padding-bottom: 2vh;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Poppins", Arial;
+  font-weight: 700;
+  margin: 2vh 2vw;
+  color: rgb(43,43,43);
+  text-align: center;
+}
+.card {
+  width: calc(100% - 2vw);
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+}
+.info {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+}
+.info-detail {
+  position: relative;
+  height: 25%;
+  border-bottom: 1px solid rgba(43,43,43,0.1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#id1 {
+  border-top-left-radius: 5px;
+}
+#id4 {
+  border-bottom-left-radius: 5px;
+}
+.details {
+  // position: absolute;
+  // top: 0;
+  // left: 0;
+  // height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(254,253,251);
+}
+#d1 {
+  border-top-left-radius: 5px;
+}
+#d4 {
+  border-bottom-left-radius: 5px;
+}
+.name {
+  margin: 0;
+  padding: 0;
+  padding-top: 0.8rem;
+  font-weight: 700;
+}
+.reservar {
+  width: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+.info-detail:hover {
+  cursor: pointer;
+}
+.reservar:hover {
+  cursor: pointer;
+  background-color: rgb(43,43,43);
+  color: #faf7f0;
+}
+.foto {
+  width: 50%;
+  background-size: cover;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px
+}
+.active1 {
+  background-image: url('https://cf.bstatic.com/images/hotel/max1024x768/110/110740619.jpg');
+  border: 2px solid #ff0049;
+}
+.active2 {
+  background-image: url('https://cf.bstatic.com/images/hotel/max1024x768/248/248494685.jpg');
+  border: 2px solid #ff0049;
+}
+.active3 {
+  background-image: url('https://cf.bstatic.com/images/hotel/max1024x768/782/78272111.jpg');
+  border: 2px solid #ff0049;
+}
+.active4 {
+  background-image: url('https://cf.bstatic.com/images/hotel/max1024x768/205/205933263.jpg');
+  border: 2px solid #ff0049;
+}
+.active0 {
+  background-image: url('../../../assets/images/default.png');
+  border: none;
+}
+.selectedD {
+  background-color: #ff0049;
+}
+.selectedR {
+  background-color: rgb(254,253,251);
+  color: rgb(43,43,43);
+  width: 15%;
+  transition: all 0.5s ease-in-out;
+  text-align: center;
+}
+
+//MOBILE DEVICES
+@media (max-width: 768px) {
+  .recomendados {
+    height: 95vh;
+  }
+  .card {
+    flex-direction: column;
+    height: 80vh;
+  }
+  .info {
+    width: 100%;
+    height: 40vh;
+  }
+  .foto {
+    width: 100%;
+    height: 100%;
+  }
+  .info-detail {
+    height: 25%;
+    width: 100%;
+  }
+  .details {
+    height: 100%;
+    padding: 0.3rem;
+    text-align: center;
+  }
+  .details h2 {
+    font-size: 1rem;
+  }
+  .details p {
+    font-size: 0.8rem;
+  }
+  .selectedR {
+    width: 20%;
+  }
+}

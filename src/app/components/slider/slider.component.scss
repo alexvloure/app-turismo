@@ -1,0 +1,15 @@
+.w-100 {
+  object-fit: cover;
+  height: 50vh;
+}
+
+@media (max-width: 768px) {
+  .w-100 {
+    height: 92vh;
+  }
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+  .w-100 {
+    height: 88vh;
+  }
+}

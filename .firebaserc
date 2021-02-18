@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "tripfy-5f183"
+  },
+  "targets": {
+    "tripfy-5f183": {
+      "hosting": {
+        "aplicacionTurismo": [
+          "tripfy-5f183"
+        ]
+      }
+    }
+  }
+}
