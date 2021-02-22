@@ -1,0 +1,11 @@
+.content {
+  height: 92vh;
+  margin-top: 8vh;
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+  .content {
+    height: 86vh;
+    margin-top: 14vh;
+  }
+}

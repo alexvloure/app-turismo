@@ -34,6 +34,12 @@ $hamburger-layer-color: #ff0049;
   margin-left: 1rem;
   // color: #66f596;
 }
+.logo:hover {
+  cursor: pointer;
+}
+.logo:focus {
+  outline:none;
+}
 .logo h2 {
   font-family: 'Righteous', Arial;
   color:rgb(43, 43, 43);

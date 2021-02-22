@@ -1,0 +1,20 @@
+<div class="listado-container">
+  <div class="listado">
+    <div class="sort">
+      <select #selectList (change)="sort(selectList.value)">
+        <option value="">Ordenar</option>
+        <option value="desc">Más caro</option>
+        <option value="asc">Más barato</option>
+        <option value="val">Valoración</option>
+      </select>
+    </div>
+    <div class="main">
+      <div class="filters"></div>
+      <div class="alojamientos">
+        <div class="alojamiento" *ngFor="let alojamiento of alojamientos" >
+          <h2 class="title">{{alojamiento.nombre}}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
