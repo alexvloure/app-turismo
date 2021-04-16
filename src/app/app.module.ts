@@ -6,6 +6,9 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatCheckboxModule } from '@angular/material/checkbox';
+import { MatSliderModule } from '@angular/material/slider';
+import { FormsModule} from '@angular/forms';
 
 // For MDB Angular Free
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
@@ -58,11 +61,14 @@ import { ListadoComponent } from './components/alojamientos-components/listado/l
     MatDatepickerModule,
     MatNativeDateModule,
     MatInputModule,
+    MatCheckboxModule,
     CarouselModule,
     WavesModule,
     MatFormFieldModule,
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
+    FormsModule,
+    MatSliderModule
   ],
   providers: [InformationService],
   bootstrap: [AppComponent],

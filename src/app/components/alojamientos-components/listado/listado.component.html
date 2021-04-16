@@ -1,7 +1,9 @@
 <div class="listado-container">
   <div class="listado">
     <div class="sort">
+      <div class="filters-mobile"></div>
       <select #selectList (change)="sort(selectList.value)">
+        <!-- (change)="priceFilter(precio)" -->
         <option value="">Ordenar</option>
         <option value="desc">Más caro</option>
         <option value="asc">Más barato</option>
@@ -9,10 +11,40 @@
       </select>
     </div>
     <div class="main">
-      <div class="filters"></div>
+      <div class="filters">
+        <div class="filters-content">
+          <h3 class="filtersTitle">Filtrar por:</h3>
+          <ul>
+            <li class="filtersSubtitle">Características</li>
+            <div *ngFor="let filter of filters">
+              <li><mat-checkbox [(ngModel)]="filter.checked" (ngModelChange)="filtered()" (ngModelChange)="sort(selectList.value)">{{filter.name}}</mat-checkbox></li>
+            </div>
+          </ul>
+          <h3 class="filtersSubtitle">Precio desde:</h3>
+          <mat-slider min="50" max="350" step="10" value="50" thumbLabel [displayWith]="formatLabel" [(ngModel)]="precio" (ngModelChange)="priceFilter(precio)" (ngModelChange)="sort(selectList.value)"></mat-slider>
+        </div>
+      </div>
       <div class="alojamientos">
-        <div class="alojamiento" *ngFor="let alojamiento of alojamientos" >
-          <h2 class="title">{{alojamiento.nombre}}</h2>
+        <div class="alojamiento" *ngFor="let alojamiento of alojamientos">
+          <div class="foto_alojamiento" style="background-image: url({{alojamiento.galeria_fotos[0]}});"></div>
+          <div class="info">
+            <div class="titleVal">
+              <h2 class="title">{{ alojamiento.nombre }}</h2>
+              <div class="valoracion">{{alojamiento.valoracion}}/5</div>
+            </div>
+            <p class="localizacion">{{alojamiento.localizacion}}</p>
+            <p class="descripcion">{{alojamiento.descripcion_corta}}</p>
+            <div class="caracteristicas" *ngFor="let caracteristica of alojamiento.caracteristicas">
+              <span title="{{caracteristica}}"><img src="../../../../assets/images/icons-characteristics/{{caracteristica}}.svg" alt="" width="20"></span>
+            </div>
+          </div>
+          <div class="reservar">
+              <div class="precio">
+                <div class="detalleP">Desde</div>
+                <div>{{alojamiento.precio_noche}}€</div>
+              </div>
+              <div class="botonReservar">Ver más</div>
+          </div>
         </div>
       </div>
     </div>
