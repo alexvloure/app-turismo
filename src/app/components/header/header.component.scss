@@ -87,7 +87,7 @@ $hamburger-layer-color: #ff0049;
 .nav-links:last-child {
   margin-right: 10rem;
 }
-#registrarse {
+#login {
   // background-color: rgb(212, 255, 236);
   background-color: #fddce5;
   color: rgb(43, 43, 43);
@@ -101,11 +101,11 @@ $hamburger-layer-color: #ff0049;
   background-position: 0% 50%;
   background-size: 0% 100%;
 }
-#r-text {
+#login-text {
   transform: skew(20deg);
   margin: 0;
 }
-#registrarse:hover {
+#login:hover {
   border: none;
   color: rgb(43, 43, 43);
   background-size: 100% 100%;
@@ -161,6 +161,7 @@ $hamburger-layer-color: #ff0049;
     // color: #66f596;
     color: #ff0049;
     cursor: pointer;
+    outline: none;
   }
   .btn {
     width: 50%;

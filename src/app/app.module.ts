@@ -9,6 +9,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatSliderModule } from '@angular/material/slider';
 import { FormsModule} from '@angular/forms';
+import { MatIconModule } from '@angular/material/icon';
 
 // For MDB Angular Free
 import { CarouselModule, WavesModule } from 'angular-bootstrap-md'
@@ -37,6 +38,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { AlojamientosComponent } from './pages/alojamientos/alojamientos.component';
 import { ContentAlojamientosComponent } from './components/alojamientos-components/content-alojamientos/content-alojamientos.component';
 import { ListadoComponent } from './components/alojamientos-components/listado/listado.component';
+import { LoginComponent } from './components/login/login.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +56,8 @@ import { ListadoComponent } from './components/alojamientos-components/listado/l
     AlojamientosComponent,
     ContentAlojamientosComponent,
     ListadoComponent,
+    LoginComponent,
+    SignupComponent,
   ],
   imports: [
     BrowserModule,
@@ -68,7 +73,8 @@ import { ListadoComponent } from './components/alojamientos-components/listado/l
     HttpClientModule,
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
-    MatSliderModule
+    MatSliderModule,
+    MatIconModule
   ],
   providers: [InformationService],
   bootstrap: [AppComponent],

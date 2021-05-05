@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="content">
+    <h1 routerLink="/home">Tripfy<span style="color:#ff0049;">.</span></h1>
+    <form action="">
+      <fieldset>
+        <div class="fila">
+          <mat-form-field color="accent" class="form-field name">
+            <mat-label>Nombre</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <mat-form-field color="accent" class="form-field lastname">
+            <mat-label>Apellidos</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+        </div>
+        <div class="fila">
+          <mat-form-field color="accent" class="form-field email">
+            <mat-label>Email</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+          <mat-form-field color="accent" class="form-field phone">
+            <mat-label>Telefono</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+        </div>
+        <div class="fila">
+          <mat-form-field color="accent" class="form-field address">
+            <mat-label>Dirección</mat-label>
+            <input matInput value="">
+          </mat-form-field>
+        </div>
+        <div class="fila">
+          <mat-form-field color="accent">
+            <mat-label>Contraseña</mat-label>
+            <input matInput [type]="hide1 ? 'password' : 'text'">
+            <button class="hide-button" mat-icon-button matSuffix (click)="hide1 = !hide1" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide1">
+            <mat-icon>{{hide1 ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <mat-form-field color="accent">
+            <mat-label>Confirma tu contraseña</mat-label>
+            <input matInput [type]="hide2 ? 'password' : 'text'">
+            <button class="hide-button" mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide2">
+            <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+        <p routerLink="/login" class="register_link">¿Ya tienes cuenta? Inicia sesión ahora</p>
+        <app-button-mod textoBoton="Registrarse" claseBoton="btn-3 xl"></app-button-mod>
+      </fieldset>
+    </form>
+  </div>
+</div>

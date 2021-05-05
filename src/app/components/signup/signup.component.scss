@@ -1,0 +1,70 @@
+.container {
+  margin: 0 auto;
+  max-width: 100vw;
+  height: 100vh;
+  background-color: #faf7f0;
+  padding: 0;
+  background: url('../../../../dist/aplicacionTurismo/assets/images/login/mallorca_login.jpeg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.filter-blur {
+  max-width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+}
+.content {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+}
+.content h1 {
+  font-family: 'Righteous', Arial !important;
+  color:rgb(43, 43, 43);
+  font-size: 2rem;
+  letter-spacing: 2px;
+  margin: 2rem auto;
+  cursor: pointer;
+}
+.content h1:focus{
+  outline: none;
+}
+form fieldset{
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fila {
+  width: 70%;
+}
+mat-form-field {
+  width: 48%;
+  margin-left: 2%;
+  margin-bottom: 1rem;
+}
+.address {
+  width: 99%;
+}
+.hide-button {
+  background-color: transparent;
+  border: none;
+}
+.register_link {
+  font-size: 0.7rem;
+  color:rgba(43, 43, 43, 0.7);
+  margin-left: 21.5rem;
+  margin-bottom: 4rem;
+  cursor: pointer;
+}
+.register_link:focus {
+  outline: none;
+}
